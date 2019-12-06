@@ -46,7 +46,8 @@
             :nsfw="streamer.nsfw"
             :title="streamer.title"
             :name="streamer.name"
-          ></stream-card>
+            lazy
+          />
         </v-col>
       </v-row>
     </v-container>

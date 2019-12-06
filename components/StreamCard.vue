@@ -1,9 +1,10 @@
 <template>
   <div>
     <v-lazy
-      :options="{ threshhold: 0.75 }"
+      :options="{ threshhold: .5 }"
       transition="fade-transition"
       min-height="150px"
+      :value="lazy ? undefined : true"
     >
       <v-card
         :to="to"
@@ -74,6 +75,7 @@
       title   : { type: String },
       name    : { type: String },
       viewers : { type: Number },
+      lazy    : { type: Boolean, default: false },
     },
   }
 </script>
