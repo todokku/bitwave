@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid px-0>
+  <div>
     <transition-group
       tag="div"
       class="row flex-wrap"
@@ -43,7 +43,7 @@
         />
       </v-col>
     </transition-group>
-  </v-container>
+  </div>
 </template>
 
 <script>

@@ -39,15 +39,19 @@
           sm="6"
           cols="12"
         >
-          <stream-card
-            :to="streamer.to.toString()"
-            :image="`${streamer.live ? streamer.thumbnail : streamer.avatar}`"
-            :live="streamer.live"
-            :nsfw="streamer.nsfw"
-            :title="streamer.title"
-            :name="streamer.name"
-            lazy
-          />
+          <v-lazy
+            :options="{ threshhold: .5 }"
+            transition="fade-transition"
+            min-height="150px">
+            <stream-card
+              :to="streamer.to.toString()"
+              :image="`${streamer.live ? streamer.thumbnail : streamer.avatar}`"
+              :live="streamer.live"
+              :nsfw="streamer.nsfw"
+              :title="streamer.title"
+              :name="streamer.name"
+            />
+          </v-lazy>
         </v-col>
       </v-row>
     </v-container>
