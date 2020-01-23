@@ -112,7 +112,9 @@
       touchless
     >
       <!-- Description -->
-      <v-tab-item>
+      <v-tab-item
+        eager
+      >
         <div
           id="description"
           ref="description"

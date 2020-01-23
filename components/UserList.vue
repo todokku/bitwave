@@ -6,6 +6,7 @@
     :clipped="false"
     color="grey darken-4"
     app
+    :mini-variant-width="80"
   >
     <v-layout
       fill-height
